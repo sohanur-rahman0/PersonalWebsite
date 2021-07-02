@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "this is a portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "Sohanur Rahman",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

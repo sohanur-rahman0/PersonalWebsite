@@ -1,0 +1,34 @@
+h1 {
+    font-size: 6rem;
+  }
+
+  @media only screen and (max-width: $bp-medium){
+    h1{
+        font-size: 4rem;
+    }
+}
+  
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  @media only screen and (max-width: $bp-medium){
+    h2{
+        font-size: 3rem;
+    }
+}
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--main-white);
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+  

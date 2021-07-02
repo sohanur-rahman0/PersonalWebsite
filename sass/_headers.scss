@@ -1,0 +1,15 @@
+.about {
+    background-color: #181719;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__header {
+        font-family: $font-display;
+    }
+
+    &__paragraph {
+        color: $red;
+        font-size: 2rem;
+    }
+}

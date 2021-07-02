@@ -1,0 +1,73 @@
+// COLOR VARIABLES
+$white: #f0f0f0;
+$red: #be3144;
+$blue: #45567d;
+$gray: #303841;
+
+// FONT VARIABLES
+$font-primary: 'Poppins', sans-serif;
+$font-display: 'Raleway', sans-serif;
+
+// responsive breakpoint
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+$bp-smallest: 31.25em; //500px
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    @media only screen and (max-width: $bp-largest){
+        font-size: 60%;
+    }
+
+    @media only screen and (max-width: $bp-medium){
+        font-size: 55%;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-smallest){
+        font-size: 42%;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    color: $white;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1.8rem;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 6rem calc(100vh - 6rem) min-content 80vh min-content;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+    background: $gray;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 100px;
+    box-shadow: inset 0 0 5px $gray;
+}

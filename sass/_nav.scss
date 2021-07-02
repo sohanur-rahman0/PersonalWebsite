@@ -1,0 +1,33 @@
+.nav {
+    background-color: $red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+
+    &__logo {
+        height: 100%;
+        width: 6rem;
+        margin: 1rem;
+        display: block;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, min-content);
+        list-style-type: none;
+        padding: 1.8rem 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $white;
+        padding: 1.8rem;
+        transition: all .3s ease-out;
+    }
+
+    &__link:hover {
+        background-color: $blue;
+    }
+
+}
