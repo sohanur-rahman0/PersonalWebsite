@@ -53,10 +53,32 @@ body {
     font-size: 1.8rem;
 }
 
-.container {
-    display: grid;
-    grid-template-rows: 6rem calc(100vh - 6rem) min-content 80vh min-content;
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
 }
+
+
+h2 {
+  font-size: 4.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
 
 ::-webkit-scrollbar {
     width: 15px;
